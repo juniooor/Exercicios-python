@@ -4,17 +4,22 @@
 #comprar apenas galões de 3,6 litros;
 #misturar latas e galões, de forma que o desperdício de tinta seja menor. Acrescente 10% de #folga e sempre arredonde os valores para cima, isto é, considere latas cheias.
 
+import math
 
 
+print('Programa para realizar o calculo de quantas latas precisa ')
+area=int(input('Quantos metros quadrados vão ser pintados?: '))
+litros=(area/6)*1.1
+latas=math.ceil(litros/18)
+valorl=latas*80
+galao=math.ceil(litros/3.6)
+valorg=galao*25
 
-#print('quantos litros precisa para pintar uma parede')
-#mt=float(input('quantos metros quadrados vão ser pintados?: '))
-#ct=3
-#pl=80
-#cl=18
-#litros=mt/ct
-#latas=int(litros/cl)
-#if litros%cl != 0:
-#    latas+= 1
-#    total= latas*pl
-#    print('você vai precisar de {:.2f} latas e fica um total de R${:.2f}'.format(latas,total)) 
+mislata= round(litros/18)
+misgalao= round((litros-mislata *18)/3.6)
+if((litros-(mislata*80)%3.6 !=0)):
+    misgalao+=1
+    totalmis= (mislata*80)+(misgalao*25)
+    print('Para compras em latas será necessario {} Latas, que irão custar R${:.2f}'.format(latas,valorl))
+    print('Para Compras em galoes são necessario {} que irão custar R${:.2f}'.format(galao,valorg))
+    print('para evitar perdas você pode comprar {} galoes e {}latas, que irá custar {}'.format(misgalao,mislata,totalmis))
