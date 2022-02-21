@@ -12,9 +12,9 @@ print(num)
 print(f'tem {len(num)} elementos')
 print()'''
 valor=[]
-valor.append(1)
-valor.append(9)
-valor.append(5)
-valor.append(4)
+for cont in range(0,5):
+    valor.append(int(input(f'Digite o valor {cont}: ')))
 for c,v in enumerate(valor):
-    print(f'na posição {c} achei {v} valor')
+    print(f'na posição {c} temos o {v}!!')
+#lista=[1,2,5,2,9,2,7,]
+
