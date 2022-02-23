@@ -1,13 +1,7 @@
+#Faça um Programa que leia um vetor de 5 números inteiros e mostre-os.
 lista=[]
-vproduto=[]
-nproduto=[]
-for n in range(1,3):
-    vprodut=float(input('Valor do produto: '))
-    vproduto.append(vprodut)
-    nprodut=str(input('Nome do produto:'))
-    nproduto.append(nprodut)
-    lista.append(vproduto[:])
-    lista.append(nproduto[:])
-    vproduto.clear()
-    nproduto.clear()
-print(lista)
+for c in range(0,5):
+    lista.append(int(input(f'Digite o {c+1}º número: ')))
+print('=-'*20)
+for i in lista:
+    print(i)
