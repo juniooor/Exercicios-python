@@ -18,3 +18,5 @@ for c,v in enumerate(valor):
     print(f'na posição {c} temos o {v}!!')
 #lista=[1,2,5,2,9,2,7,]
 
+
+
