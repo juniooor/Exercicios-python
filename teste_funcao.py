@@ -27,3 +27,9 @@ valores=[6,7,3,5,7]
 dobra(valores)
 print(valores)'''
 
+def  batata(msg, nome):
+    print(msg, nome)
+
+
+batata('batata com maionese', 'melhor  que muita gente')
+batata('batata','purÊ')
