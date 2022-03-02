@@ -25,11 +25,31 @@ def dobra(lst):
 
 valores=[6,7,3,5,7]
 dobra(valores)
-print(valores)'''
+print(valores)
 
 def  batata(msg, nome):
     print(msg, nome)
 
 
 batata('batata com maionese', 'melhor  que muita gente')
-batata('batata','purÊ')
+batata('batata','purÊ')'''
+
+'''
+def escrita(letra):
+    return letra
+
+
+texto=escrita('Sopa de batata')
+print(texto)'''
+
+
+def contagem(n):
+    lista=[]
+    for i in range(1,n+1):
+        lista.append(i)
+    return lista
+
+
+a=int(input('Digite um valor: '))
+print(contagem(a))
+
